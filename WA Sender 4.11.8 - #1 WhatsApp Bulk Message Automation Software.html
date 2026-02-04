@@ -1,0 +1,2866 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)https://wasender.me/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" type="image/png" href="https://wasender.me/favicon.png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta Pixel Code -->
+    <script src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/1126742998501057" async=""></script><script async="" src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/fbevents.js.download"></script><script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1126742998501057');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1126742998501057&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <title>WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #25D366;
+            --secondary-color: #128C7E;
+            --dark-color: #075E54;
+            --light-bg: #f8f9fa;
+            --text-dark: #333;
+            --text-light: #666;
+            --accent-color: #FFA726;
+            --gradient: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-color);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            z-index: 999;
+            transition: all 0.3s;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-float svg {
+            width: 35px;
+            height: 35px;
+            fill: white;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo::before {
+            content: "💬";
+            font-size: 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background: var(--gradient);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(37, 211, 102, 0.1) 0%, rgba(18, 140, 126, 0.1) 100%);
+            padding: 8rem 5% 4rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(37, 211, 102, 0.2) 0%, transparent 70%);
+            top: -250px;
+            right: -250px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            z-index: 1;
+            position: relative;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: slideInUp 0.6s ease-out;
+        }
+
+        .hero-text p {
+            font-size: 1.3rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .version-info {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(37, 211, 102, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(37, 211, 102, 0.3);
+            animation: slideInUp 0.7s ease-out;
+        }
+
+        .version-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .update-text {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            animation: slideInUp 1s ease-out;
+        }
+
+        .secondary-button {
+            background: white;
+            color: var(--primary-color);
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid var(--primary-color);
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .secondary-button:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .hero-video {
+            position: relative;
+            /*animation: float 4s ease-in-out infinite;*/
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 15px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 5rem 5%;
+            background: white;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient);
+            transform: translateX(-100%);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .feature-card:hover::before {
+            transform: translateX(0);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: pulse 2s infinite;
+            
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--gradient);
+            padding: 4rem 5%;
+            color: white;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Product Gallery */
+        .product-gallery {
+            padding: 5rem 5%;
+            background: var(--gradient);
+            color: white;
+        }
+
+        .product-gallery .section-header h2 {
+            color: white;
+        }
+
+        .product-gallery .section-header p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .carousel-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .carousel-wrapper {
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            position: relative;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 500px;
+            object-fit: contain;
+            background: white;
+            display: block;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            transition: all 0.3s;
+            z-index: 10;
+        }
+
+        .carousel-btn:hover {
+            background: white;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-btn.prev {
+            left: 20px;
+        }
+
+        .carousel-btn.next {
+            right: 20px;
+        }
+
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 2rem;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .indicator.active {
+            background: white;
+            transform: scale(1.2);
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 5rem 5%;
+            background: var(--light-bg);
+        }
+
+        .pricing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .pricing-card.featured {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.3);
+        }
+
+        .pricing-card.featured::before {
+            content: "Most Popular";
+            position: absolute;
+            top: 0;
+            right: 20px;
+            background: var(--accent-color);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0 0 10px 10px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+
+        .pricing-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+
+        .pricing-description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            min-height: 50px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-features li::before {
+            content: "✓";
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* How it Works */
+        .how-it-works {
+            padding: 5rem 5%;
+            background: white;
+        }
+
+        .steps-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .steps-container::before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 80%;
+            background: var(--primary-color);
+            left: 50%;
+            top: 10%;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+
+        .step {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step:nth-child(even) {
+            direction: rtl;
+        }
+
+        .step-content {
+            direction: ltr;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .step-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 5%;
+            background: var(--light-bg);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: """;
+            font-size: 4rem;
+            color: var(--primary-color);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            opacity: 0.3;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .author-info h4 {
+            font-size: 1.1rem;
+            color: var(--dark-color);
+        }
+
+        .author-info p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .rating {
+            color: #FFA726;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 5rem 5%;
+            background: white;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--light-bg);
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: rgba(37, 211, 102, 0.1);
+        }
+
+        .faq-question::after {
+            content: "+";
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 300px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--gradient);
+            padding: 5rem 5%;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-section .cta-button {
+            background: white;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            padding: 1rem 3rem;
+        }
+
+        .cta-section .cta-button:hover {
+            background: #f0f0f0;
+        }
+
+        /* WhatsApp CTA */
+        .whatsapp-cta {
+            background: white;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        .whatsapp-cta h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .whatsapp-cta p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-button {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 3rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 2rem 5%;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            overflow: auto;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 2rem;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 700px;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        .modal h2 {
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+        }
+
+        .modal h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+        }
+
+        .modal p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Menu Mobile - Escondido no Desktop */
+        .mobile-menu-toggle {
+            display: none;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            /* Botão Hamburguer Mobile */
+            .mobile-menu-toggle {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 30px;
+                height: 25px;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                padding: 0;
+                z-index: 1001;
+            }
+
+            .mobile-menu-toggle span {
+                width: 100%;
+                height: 3px;
+                background: var(--primary-color);
+                border-radius: 3px;
+                transition: all 0.3s ease;
+            }
+
+            /* Animação do botão hamburguer quando ativo */
+            .mobile-menu-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(8px, 8px);
+            }
+
+            .mobile-menu-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .mobile-menu-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -7px);
+            }
+
+            /* Menu Mobile */
+            .mobile-menu {
+                display: block;
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: 280px;
+                height: calc(100vh - 70px);
+                background: white;
+                box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+                transition: right 0.3s ease;
+                z-index: 999;
+                overflow-y: auto;
+            }
+
+            .mobile-menu.active {
+                right: 0;
+            }
+
+            .mobile-nav-links {
+                list-style: none;
+                padding: 2rem 0;
+            }
+
+            .mobile-nav-links li {
+                padding: 0;
+                border-bottom: 1px solid #eee;
+            }
+
+            .mobile-nav-links li:last-child {
+                border-bottom: none;
+                padding: 1rem;
+            }
+
+            .mobile-nav-links a {
+                display: block;
+                padding: 1rem 1.5rem;
+                color: var(--text-dark);
+                text-decoration: none;
+                font-weight: 500;
+                transition: all 0.3s;
+            }
+
+            .mobile-nav-links a:hover {
+                background: rgba(37, 211, 102, 0.1);
+                color: var(--primary-color);
+            }
+
+            .mobile-nav-links .cta-button {
+                margin: 1rem;
+                text-align: center;
+                padding: 0.8rem 2rem;
+            }
+
+            /* Overlay quando menu está aberto */
+            body.mobile-menu-open::before {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 998;
+            }
+
+            body.mobile-menu-open {
+                overflow: hidden;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+
+            .step {
+                grid-template-columns: 1fr;
+            }
+
+            .step:nth-child(even) {
+                direction: ltr;
+            }
+
+            .steps-container::before {
+                display: none;
+            }
+
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
+
+            .whatsapp-float svg {
+                width: 30px;
+                height: 30px;
+            }
+
+            .carousel-btn {
+                width: 40px;
+                height: 40px;
+            }
+
+            .carousel-btn.prev {
+                left: 10px;
+            }
+
+            .carousel-btn.next {
+                right: 10px;
+            }
+
+            .carousel-slide img {
+                height: 300px;
+            }
+
+            .version-info {
+                flex-direction: column;
+                gap: 5px;
+                text-align: center;
+            }
+        }
+    </style>
+<script type="text/javascript" async="" src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/f.txt"></script></head>
+<body>
+    <!-- WhatsApp Floating Button 
+    <a href="https://wa.me/5519982122711?text=Hello%21+I+want+to+know+more+about+WA+Sender" target="_blank" class="whatsapp-float">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>-->
+
+    <!-- Header -->
+    <header style="box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 20px;">
+        <nav>
+            <div class="logo">WA Sender</div>
+
+            <!-- Menu Desktop -->
+            <ul class="nav-links">
+                <li><a href="https://wasender.me/#features">Features</a></li>
+                <li><a href="https://wasender.me/#how-it-works">How it Works</a></li>
+                <li><a href="https://wasender.me/#pricing">Pricing</a></li>
+                <li><a href="https://wasender.me/#testimonials">Reviews</a></li>
+                <li><a href="https://wasender.me/#faq">FAQ</a></li>
+                <li><a href="https://wasender.me/#pricing" class="cta-button">Get Started</a></li>
+            </ul>
+
+            <!-- Botão Hamburguer Mobile -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu Mobile -->
+            <div class="mobile-menu">
+                <ul class="mobile-nav-links">
+                    <li><a href="https://wasender.me/#features">Features</a></li>
+                    <li><a href="https://wasender.me/#how-it-works">How it Works</a></li>
+                    <li><a href="https://wasender.me/#pricing">Pricing</a></li>
+                    <li><a href="https://wasender.me/#testimonials">Reviews</a></li>
+                    <li><a href="https://wasender.me/#faq">FAQ</a></li>
+                    <li><a href="https://wasender.me/#pricing" class="cta-button">Get Started</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="version-info">
+                    <span class="version-badge">4.11.8</span>
+                    <span class="update-text">Last updated: February 1, 2026</span>
+                </div>
+                <h1>Send WhatsApp Messages at Scale with WA Sender</h1>
+                <p>The most powerful WhatsApp bulk messaging software for Windows that helps you connect with thousands of customers instantly. Automate, personalize, and grow your business.</p>
+                <div class="hero-buttons">
+                    <a href="https://wasender.me/#pricing" class="cta-button">Start Today - Only $12</a>
+                    <a href="https://wasender.me/#features" class="secondary-button">See Features</a>
+                </div>
+            </div>
+            <div class="hero-video">
+                <div class="video-container">
+                    <iframe src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/-a0vYxh6COI.html" title="WA Sender Demo Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2>Powerful Features for Your Business</h2>
+            <p>Everything you need to run successful WhatsApp marketing campaigns</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" style="animation: 0.6s ease-out 0s 1 normal forwards running slideInUp;">
+                <div class="feature-icon">📤</div>
+                <h3>Bulk Messaging</h3>
+                <p>Send thousands of personalized messages with just one click. Import contacts from CSV/Excel files instantly.</p>
+            </div>
+            <div class="feature-card" style="animation: 0.6s ease-out 0s 1 normal forwards running slideInUp;">
+                <div class="feature-icon">🎯</div>
+                <h3>Smart Personalization</h3>
+                <p>Customize each message with recipient names, custom fields, and dynamic content for better engagement.</p>
+            </div>
+            <div class="feature-card" style="animation: 0.6s ease-out 0s 1 normal forwards running slideInUp;">
+                <div class="feature-icon">📎</div>
+                <h3>Media Attachments</h3>
+                <p>Send images, videos, documents, and audio files to make your messages more engaging and informative.</p>
+            </div>
+            <div class="feature-card" style="animation: 0.6s ease-out 0s 1 normal forwards running slideInUp;">
+                <div class="feature-icon">⏰</div>
+                <h3>Smart Delays</h3>
+                <p>Avoid getting banned with intelligent time gaps between messages and batch sending capabilities.</p>
+            </div>
+            <div class="feature-card" style="animation: 0.6s ease-out 0s 1 normal forwards running slideInUp;">
+                <div class="feature-icon">📊</div>
+                <h3>Detailed Analytics</h3>
+                <p>Track delivery rates, read receipts, and campaign performance with comprehensive reporting tools.</p>
+            </div>
+            <div class="feature-card" style="animation: 0.6s ease-out 0s 1 normal forwards running slideInUp;">
+                <div class="feature-icon">🔄</div>
+                <h3>Auto-Reply Bot</h3>
+                <p>Set up intelligent auto-responses to handle customer queries 24/7 and improve engagement.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- White Label Section - Adicione ANTES da seção "How it Works" -->
+<!-- Substitua a seção White Label existente por esta versão corrigida -->
+
+<section class="white-label-section" id="white-label">
+    <div class="white-label-container">
+        <div class="white-label-grid">
+            <div class="white-label-content">
+                <div class="white-label-badge">
+                    🎨 WHITE LABEL READY
+                </div>
+                <h2 class="white-label-title">
+                    Make It Your Own Brand
+                </h2>
+                <p class="white-label-description">
+                    Customize WA Sender with your company colors, logo, and name directly in the software. Perfect for agencies and resellers who want to offer a branded solution to their clients.
+                </p>
+                <ul class="white-label-features">
+                    <li>
+                        <span class="feature-check">✓</span>
+                        <span class="feature-text">Change software name and branding</span>
+                    </li>
+                    <li>
+                        <span class="feature-check">✓</span>
+                        <span class="feature-text">Custom color schemes</span>
+                    </li>
+                    <li>
+                        <span class="feature-check">✓</span>
+                        <span class="feature-text">Add your own logo</span>
+                    </li>
+                </ul>
+                <button onclick="openVideoModal(&#39;customColorVideo&#39;)" class="video-button">
+                    <span class="video-icon">▶</span>
+                    Watch Customization Tutorial
+                </button>
+            </div>
+            <div class="white-label-image">
+                <div class="image-wrapper">
+                    <img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/dashboard.png" alt="WA Sender Customizable Dashboard">
+                </div>
+                <div class="customizable-badge">
+                    100% Customizable
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Adicione este CSS no final da tag <style> existente -->
+<style>
+/* White Label Section - Estilos Responsivos */
+.white-label-section {
+    padding: 4rem 5%;
+    background: linear-gradient(135deg, #f8f9fa 0%, white 100%);
+}
+
+.white-label-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.white-label-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.white-label-content {
+    order: 1;
+}
+
+.white-label-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #FFA726 0%, #FF6B35 100%);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.white-label-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #075E54;
+    line-height: 1.2;
+}
+
+.white-label-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.white-label-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.white-label-features li {
+    padding: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.feature-check {
+    background: #25D366;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.white-label-image {
+    order: 2;
+    position: relative;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    transform: perspective(1000px) rotateY(-5deg);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.customizable-badge {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background: #FFA726;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 10px 30px rgba(255, 167, 38, 0.3);
+    animation: pulse 2s infinite;
+    white-space: nowrap;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .white-label-section {
+        padding: 3rem 5%;
+    }
+    
+    .white-label-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .white-label-content {
+        order: 2;
+        text-align: left;
+    }
+    
+    .white-label-badge {
+        font-size: 0.8rem;
+        padding: 0.4rem 1rem;
+    }
+    
+    .white-label-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .white-label-description {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .white-label-features li {
+        font-size: 0.95rem;
+        padding: 0.6rem 0;
+    }
+    
+    .feature-check {
+        width: 25px;
+        height: 25px;
+        font-size: 0.9rem;
+    }
+    
+    .white-label-image {
+        order: 1;
+        margin-bottom: 1rem;
+    }
+    
+    .image-wrapper {
+        transform: none;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .customizable-badge {
+        position: static;
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+        animation: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .white-label-section {
+        padding: 2rem 1rem;
+    }
+    
+    .white-label-title {
+        font-size: 1.5rem;
+    }
+    
+    .white-label-description {
+        font-size: 0.9rem;
+    }
+    
+    .white-label-features li {
+        font-size: 0.85rem;
+    }
+}
+</style>
+    
+    <!-- Product Gallery Section -->
+    <section class="product-gallery">
+        <div class="section-header">
+            <h2>See WA Sender in Action</h2>
+            <p>Screenshots of our powerful WhatsApp automation software</p>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="carouselTrack" style="transform: translateX(-1000%);">
+                    <!-- Images will be loaded dynamically -->
+                <div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e6962622e636f2f326851677a64332f32302e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e6962622e636f2f326851677a64332f32302e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e6962622e636f2f44666d313932542f32342e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e6962622e636f2f44666d313932542f32342e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e6962622e636f2f464b57585862682f32332e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e6962622e636f2f464b57585862682f32332e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e6962622e636f2f4a767835487a792f32352e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e6962622e636f2f4a767835487a792f32352e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e6962622e636f2f62524c504e38722f31372e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e6962622e636f2f62524c504e38722f31372e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e6962622e636f2f715952327478342f31382e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e6962622e636f2f715952327478342f31382e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e6962622e636f2f7a37564e3551632f32312e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e6962622e636f2f7a37564e3551632f32312e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f326936563053732e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f326936563053732e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f334650314a31552e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f334650314a31552e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f394a6c6c7344562e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f394a6c6c7344562e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f47466c355378532e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f47466c355378532e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f48544377756d792e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f48544377756d792e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f4c52457a3870612e706e67 (1).png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f4c52457a3870612e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f4c52457a3870612e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f4d48306e39574f2e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f4d48306e39574f2e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f50674b444561352e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f50674b444561352e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f567431667636392e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f567431667636392e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f5a754c784b68522e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f5a754c784b68522e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f6337467a4274732e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f6337467a4274732e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f6350647947744c2e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f6350647947744c2e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f645078767679572e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f645078767679572e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f6a707a334143452e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f6a707a334143452e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f6c394c765045322e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f6c394c765045322e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div><div class="carousel-slide" style="background-image: url(&quot;album/68747470733a2f2f692e696d6775722e636f6d2f767a654f3836662e706e67.png&quot;);"><img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/68747470733a2f2f692e696d6775722e636f6d2f767a654f3836662e706e67.png" alt="WA Sender Screenshot" loading="lazy"></div></div>
+            </div>
+            <button class="carousel-btn prev" id="prevBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            <button class="carousel-btn next" id="nextBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            <div class="carousel-indicators" id="indicators">
+                <!-- Indicators will be added dynamically -->
+            <div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator active"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div></div>
+        </div>
+    </section>
+
+<!-- License Panel Section - Adicione APÓS a seção White Label -->
+
+<section class="license-panel-section" id="license-panel">
+    <div class="license-panel-container">
+        <div class="license-panel-grid">
+            <div class="panel-content">
+                <div class="panel-badge">
+                    🔑 ONLINE LICENSE PANEL
+                </div>
+                <h2 class="panel-title">
+                    Manage All Your Licenses Online
+                </h2>
+                <p class="panel-description">
+                    Generate unlimited licenses, track activations, and manage your entire reseller business from our powerful web-based dashboard. Available 24/7 from any device.
+                </p>
+                <ul class="panel-features">
+                    <li>
+                        <span class="feature-icon2">✓</span>
+                        <span>Generate unlimited license keys instantly</span>
+                    </li>
+                    <li>
+                        <span class="feature-icon2">✓</span>
+                        <span>Activate/deactivate licenses remotely</span>
+                    </li>
+                    <li>
+                        <span class="feature-icon2">✓</span>
+                        <span>Real-time activation tracking &amp; reports</span>
+                    </li>
+                    <li>
+                        <span class="feature-icon2">✓</span>
+                        <span>Complete client management system</span>
+                    </li>
+                </ul>
+                <div class="panel-note">
+                    <strong>Included in:</strong> Reseller &amp; Distributor Plans
+                </div>
+                <button onclick="openVideoModal(&#39;licensePanelVideo&#39;)" class="video-button">
+                    <span class="video-icon">▶</span>
+                    Watch Tutorial Video
+                </button>
+            </div>
+            <div class="panel-image">
+                <div class="image-wrapper">
+                    <img src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/dashboard2.png" alt="License Management Dashboard">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS para a seção License Panel -->
+<style>
+/* License Panel Section - Versão Simplificada */
+.license-panel-section {
+    padding: 4rem 5%;
+    background: white;
+}
+
+.license-panel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.license-panel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.panel-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #4e76d9 0%, #2158e1 100%);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.panel-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #075E54;
+    line-height: 1.2;
+}
+
+.panel-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.panel-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+.panel-features li {
+    padding: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.feature-icon2 {
+    background: #25D366;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.panel-note {
+    display: inline-block;
+    background: rgba(37, 211, 102, 0.1);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: #075E54;
+    border: 1px solid rgba(37, 211, 102, 0.3);
+}
+
+.panel-image {
+    position: relative;
+}
+
+.panel-image .image-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.panel-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .license-panel-section {
+        padding: 3rem 5%;
+    }
+    
+    .license-panel-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .panel-title {
+        font-size: 1.8rem;
+    }
+    
+    .panel-description {
+        font-size: 1rem;
+    }
+    
+    .panel-features li {
+        font-size: 0.95rem;
+        padding: 0.6rem 0;
+    }
+    
+    .panel-image {
+        order: -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .license-panel-section {
+        padding: 2rem 1rem;
+    }
+    
+    .panel-title {
+        font-size: 1.5rem;
+    }
+    
+    .panel-features li {
+        font-size: 0.85rem;
+    }
+    
+    .feature-icon {
+        width: 25px;
+        height: 25px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Video Button Styles */
+.video-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.video-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+    background: linear-gradient(135deg, #CC0000 0%, #990000 100%);
+}
+
+.video-icon {
+    background: rgba(255, 255, 255, 0.2);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+/* Video Modal Styles */
+.video-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.3s ease;
+}
+
+.video-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.video-modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.video-modal-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background: #FF0000;
+    color: white;
+    border: none;
+    font-size: 40px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10000;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.video-modal-close:hover {
+    background: #CC0000;
+    transform: rotate(90deg);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .video-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .video-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+
+    .video-modal-content {
+        width: 95%;
+    }
+
+    .video-modal-close {
+        top: -45px;
+        width: 45px;
+        height: 45px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    .video-modal-close {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+    }
+}
+</style>
+    <!-- Pricing Section -->
+    <!-- Substitua a seção Pricing existente por esta versão atualizada -->
+
+<!-- Pricing Section -->
+<section class="pricing" id="pricing">
+    <div class="section-header">
+        <h2>Choose Your Plan</h2>
+        <p>All plans include unlimited messaging features. The difference is in the licensing capabilities.</p>
+    </div>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <div class="pricing-header">
+                <h3>Personal Use</h3>
+            </div>
+            <div class="pricing-price">
+                $12<span>/lifetime</span>
+            </div>
+            <div class="pricing-description">
+                Perfect for individual use
+            </div>
+            <ul class="pricing-features">
+                <li>1 License</li>
+                <li>Unlimited messages/day</li>
+                <li>All premium features</li>
+                <li>Import unlimited contacts</li>
+                <li>Personalization &amp; automation</li>
+                <li>Media attachments support</li>
+                <li>Analytics dashboard</li>
+                <li>Email support</li>
+            </ul>
+            <a href="https://wasender.me/checkout/index.php?product=personal" class="cta-button">Get Started</a>
+        </div>
+        
+        <!-- ALTERAÇÃO: Removida a classe "featured" deste cartão -->
+        <div class="pricing-card">
+            <div class="pricing-header">
+                <h3>Reseller</h3>
+            </div>
+            <div class="pricing-price">
+                $29<span>/lifetime</span>
+            </div>
+            <div class="pricing-description">
+                Unlimited License Panel for your clients
+            </div>
+            <ul class="pricing-features">
+                <li><strong>Everything in Personal, plus:</strong></li>
+                <li>Unlimited online license panel</li>
+                <li>Generate licenses for clients</li>
+                <li>Manage client activations</li>
+                <li>Client management dashboard</li>
+                <li>License tracking</li>
+                <li>Reports logs</li>
+                <li>Priority support</li>
+            </ul>
+            <a href="https://wasender.me/checkout/index.php?product=reseller" class="cta-button">Start Reselling</a>
+        </div>
+        
+        <!-- ALTERAÇÃO: Adicionada a classe "featured" neste cartão -->
+        <div class="pricing-card featured">
+            <div class="pricing-header">
+                <h3>Distributor</h3>
+            </div>
+            <div class="pricing-price">
+                $49<span>/lifetime</span>
+            </div>
+            <div class="pricing-description">
+                Create multiple resellers with their own panels
+            </div>
+            <ul class="pricing-features">
+                <li><strong>Everything in Reseller, plus:</strong></li>
+                <li><strong>Make It Your Own Brand 🎨</strong></li>
+                <li>Create unlimited resellers</li>
+                <li>Each reseller gets their panel</li>
+                <li>Master distributor dashboard</li>
+                <li>Multi-level license management</li>
+                <li>Reseller performance tracking</li>
+                <li>Custom branding for resellers</li>
+                <li>VIP support</li>
+            </ul>
+            <a href="https://wasender.me/checkout/index.php?product=distributor" class="cta-button">Become Distributor</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <h2>What Our Customers Say</h2>
+            <p>Join thousands of satisfied businesses using WA Sender</p>
+        </div>
+        <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                <div class="rating">
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                    </div>
+                <p class="testimonial-text">"Congratulate and thanks to the developer for this Product. I am working on this field since 4 years as a Digital Marketer. I have lots of tools and software's for bulk sending, I had invested lots of money into them but always getting issue with Support and Updates. But looking to this product is continuously improving and which has very stable support and update system. This developer not only provided amazing support for the script with in time frame acceptable but does so even on weekend which is very rare. One of the best scripts I've ever used and available at an amazing quality. 100% Recommended!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SA</div>
+                    <div class="author-info">
+                        <h4>satyami</h4>
+                        <p>Digital Marketer</p>
+                    </div>
+                </div>
+            </div>
+                        <div class="testimonial-card">
+                <div class="rating">
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                    </div>
+                <p class="testimonial-text">"The reseller program is fantastic! I'm managing 50+ clients with the license panel, and the white-label feature helps me build my own brand."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SM</div>
+                    <div class="author-info">
+                        <h4>Sarah Miller</h4>
+                        <p>Digital Marketing Agency</p>
+                    </div>
+                </div>
+            </div>
+                        <div class="testimonial-card">
+                <div class="rating">
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                    </div>
+                <p class="testimonial-text">"Best WhatsApp automation tool I've ever used. The smart delay feature keeps our account safe while sending thousands of messages daily."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RK</div>
+                    <div class="author-info">
+                        <h4>Robert Kim</h4>
+                        <p>E-commerce Store Owner</p>
+                    </div>
+                </div>
+            </div>
+                        <div class="testimonial-card">
+                <div class="rating">
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                    </div>
+                <p class="testimonial-text">"The app is completely amazing. Clear, neat, and easy documentation even if you are not a developer or have no idea about Visual Studio just like myself. But the cherry on top is the support from the developer. The best support I have ever seen. 100% recommended."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">PB</div>
+                    <div class="author-info">
+                        <h4>pranavbatra</h4>
+                        <p>Entrepreneur</p>
+                    </div>
+                </div>
+            </div>
+                        <div class="testimonial-card">
+                <div class="rating">
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                    </div>
+                <p class="testimonial-text">"Awesome features, I appreciate it a lot."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JJ</div>
+                    <div class="author-info">
+                        <h4>jaffarajk</h4>
+                        <p>Software Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+                        <div class="testimonial-card">
+                <div class="rating">
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                            ⭐
+                                    </div>
+                <p class="testimonial-text">"Excellent tool, user-friendly. Especially the BOT is awesome. Thanks a lot!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SG</div>
+                    <div class="author-info">
+                        <h4>slovenguy</h4>
+                        <p>Tech Specialist</p>
+                    </div>
+                </div>
+            </div>
+                    </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Get answers to common questions about WA Sender</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">Is WA Sender safe to use? Will my WhatsApp account get banned?</div>
+                <div class="faq-answer">
+                    <p>WA Sender is designed with safety in mind. Our smart delay system, batch sending, and gradual volume increase features help protect your account. We recommend following WhatsApp's guidelines and avoiding spam messages.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What's the difference between the plans?</div>
+                <div class="faq-answer">
+                    <p>All plans include the full WA Sender software with unlimited features. The Personal plan is for individual use. The Reseller plan adds an unlimited online panel to generate licenses for your clients. The Distributor plan lets you create multiple resellers, each with their own panel.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do I need to save contacts before sending messages?</div>
+                <div class="faq-answer">
+                    <p>No! WA Sender allows you to send messages to unsaved numbers directly. Simply import your contact list from CSV/Excel or paste the numbers, and you're ready to go.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Is this a one-time payment?</div>
+                <div class="faq-answer">
+                    <p>Yes! All our plans are lifetime licenses with one-time payment. No monthly fees, no hidden costs. You pay once and use forever, including all future updates.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can I send media files with messages?</div>
+                <div class="faq-answer">
+                    <p>Yes! WA Sender supports sending images, videos, documents, and audio files. You can attach media to make your messages more engaging and informative.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Ready to Transform Your WhatsApp Marketing?</h2>
+        <p>Join 100,000+ businesses already using WA Sender to grow their customer base</p>
+        <a href="https://wasender.me/#pricing" class="cta-button">Get Started Today - From $12</a>
+    </section>
+
+    <!-- WhatsApp CTA -->
+    <section class="whatsapp-cta">
+        <h3>Have Questions? Let's Talk!</h3>
+        <p>Our team is ready to help you get started with WA Sender</p>
+        <a href="https://wa.me/5519982122711?text=Hello%21+I+want+to+know+more+about+WA+Sender" target="_blank" class="whatsapp-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+            </svg>
+            Chat on WhatsApp
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://wa.me/5519982122711?text=Hello%21+I+want+to+know+more+about+WA+Sender">Contact WhatsApp</a>
+            <a href="https://wasender.me/#" onclick="openModal(&#39;privacy&#39;)">Privacy Policy</a>
+            <a href="https://wasender.me/#" onclick="openModal(&#39;terms&#39;)">Terms of Use</a>
+        </div>
+        <p>© 2024 WA Sender. All rights reserved. | Not affiliated with WhatsApp Inc.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="policyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // Modal functionality
+        function openModal(type) {
+            const modal = document.getElementById('policyModal');
+            const modalContent = document.getElementById('modalContent');
+            
+            if (type === 'privacy') {
+                modalContent.innerHTML = `
+                    <h2>Privacy Policy</h2>
+                    <p><strong>Last updated: January 2024</strong></p>
+                    
+                    <h3>1. Information We Collect</h3>
+                    <p>We collect information you provide directly to us, such as when you create an account, make a purchase, or contact us for support. This may include your name, email address, and payment information.</p>
+                    
+                    <h3>2. How We Use Your Information</h3>
+                    <p>We use the information we collect to provide, maintain, and improve our services, process transactions, send you technical notices and support messages, and respond to your comments and questions.</p>
+                    
+                    <h3>3. Information Sharing</h3>
+                    <p>We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:</p>
+                    <ul>
+                        <li>With your consent</li>
+                        <li>To comply with laws</li>
+                        <li>To protect our rights</li>
+                    </ul>
+                    
+                    <h3>4. Data Security</h3>
+                    <p>We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction.</p>
+                    
+                    <h3>5. Contact Us</h3>
+                    <p>If you have any questions about this Privacy Policy, please contact us through our WhatsApp support.</p>
+                `;
+            } else if (type === 'terms') {
+                modalContent.innerHTML = `
+                    <h2>Terms of Use</h2>
+                    <p><strong>Last updated: January 2024</strong></p>
+                    
+                    <h3>1. Acceptance of Terms</h3>
+                    <p>By accessing and using WA Sender, you accept and agree to be bound by the terms and provision of this agreement.</p>
+                    
+                    <h3>2. Use License</h3>
+                    <p>Permission is granted to temporarily download one copy of WA Sender for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title.</p>
+                    
+                    <h3>3. Disclaimer</h3>
+                    <p>The materials on WA Sender are provided on an 'as is' basis. WA Sender makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+                    
+                    <h3>4. Limitations</h3>
+                    <p>In no event shall WA Sender or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use WA Sender.</p>
+                    
+                    <h3>5. User Responsibilities</h3>
+                    <p>Users must comply with WhatsApp's terms of service and avoid sending spam or unwanted messages. Misuse of the software may result in account suspension.</p>
+                    
+                    <h3>6. Refund Policy</h3>
+                    <p>We offer a 7-day money-back guarantee. If you're not satisfied with WA Sender, contact our support team for a full refund.</p>
+                `;
+            }
+            
+            modal.style.display = "block";
+        }
+
+        // Close modal
+        document.querySelector('.close').onclick = function() {
+            document.getElementById('policyModal').style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('policyModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+                
+                // Close other FAQs
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Header scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Animate on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'slideInUp 0.6s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all feature cards, pricing cards, and testimonial cards
+        document.querySelectorAll('.feature-card, .pricing-card, .testimonial-card, .step').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Number counter animation
+        const animateValue = (el, start, end, duration) => {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                el.innerText = Math.floor(progress * (end - start) + start) + (el.dataset.suffix || '');
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
+
+        // Animate stats when in view
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.animated) {
+                    const statNumber = entry.target.querySelector('h3');
+                    const value = statNumber.innerText;
+                    let number = 0;
+                    let suffix = '';
+                    
+                    if (value.includes('M+')) {
+                        number = parseInt(value);
+                        suffix = 'M+';
+                    } else if (value.includes('K+')) {
+                        number = parseInt(value);
+                        suffix = 'K+';
+                    } else if (value.includes('%')) {
+                        number = parseInt(value);
+                        suffix = '%';
+                    } else if (value.includes('/')) {
+                        statNumber.innerText = value;
+                        return;
+                    }
+                    
+                    statNumber.dataset.suffix = suffix;
+                    animateValue(statNumber, 0, number, 2000);
+                    entry.target.animated = true;
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.stat-item').forEach(el => {
+            statsObserver.observe(el);
+        });
+
+        // Product Gallery Carousel
+        class ProductCarousel {
+            constructor() {
+                this.currentSlide = 0;
+                this.slides = [];
+                this.track = document.getElementById('carouselTrack');
+                this.indicators = document.getElementById('indicators');
+                this.prevBtn = document.getElementById('prevBtn');
+                this.nextBtn = document.getElementById('nextBtn');
+                this.autoplayInterval = null;
+                
+                this.init();
+            }
+
+            async init() {
+                await this.loadImages();
+                this.setupEventListeners();
+                this.startAutoplay();
+            }
+
+            async loadImages() {
+                // Try to load images using PHP to scan the album directory
+                try {
+                    const response = await fetch('get_album_images.php');
+                    if (response.ok) {
+                        const images = await response.json();
+                        if (images.length > 0) {
+                            images.forEach(imgPath => {
+                                this.createSlide(imgPath);
+                            });
+                            this.updateCarousel();
+                            return;
+                        }
+                    }
+                } catch (error) {
+                    console.log('Could not load images via PHP, trying direct method');
+                }
+
+                // Fallback: try common image names
+                const extensions = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+                const imagePromises = [];
+
+                // Try to load images from album folder (1.jpg, 2.jpg, etc.)
+                for (let i = 1; i <= 50; i++) {
+                    for (const ext of extensions) {
+                        const imgPath = `album/${i}.${ext}`;
+                        imagePromises.push(this.checkImageExists(imgPath));
+                    }
+                }
+
+                // Also try some common naming patterns
+                const commonNames = ['screenshot', 'image', 'photo', 'pic', 'demo', 'preview', 'main', 'home', 'dashboard', 'interface'];
+                for (const name of commonNames) {
+                    for (const ext of extensions) {
+                        const imgPath = `album/${name}.${ext}`;
+                        imagePromises.push(this.checkImageExists(imgPath));
+                    }
+                }
+
+                const results = await Promise.all(imagePromises);
+                const validImages = results.filter(img => img !== null);
+
+                if (validImages.length === 0) {
+                    // Fallback: create placeholder slides if no images found
+                    this.createPlaceholderSlides();
+                } else {
+                    validImages.forEach(imgPath => {
+                        this.createSlide(imgPath);
+                    });
+                }
+
+                this.updateCarousel();
+            }
+
+            checkImageExists(src) {
+                return new Promise((resolve) => {
+                    const img = new Image();
+                    img.onload = () => resolve(src);
+                    img.onerror = () => resolve(null);
+                    img.src = src;
+                });
+            }
+
+            createSlide(imagePath) {
+                const slide = document.createElement('div');
+                slide.className = 'carousel-slide';
+                
+                // Set the background image for the blurred effect
+                slide.style.backgroundImage = `url(${imagePath})`;
+                
+                const img = document.createElement('img');
+                img.src = imagePath;
+                img.alt = 'WA Sender Screenshot';
+                img.loading = 'lazy';
+                
+                slide.appendChild(img);
+                this.track.appendChild(slide);
+                this.slides.push(slide);
+
+                // Create indicator
+                const indicator = document.createElement('div');
+                indicator.className = 'indicator';
+                indicator.addEventListener('click', () => this.goToSlide(this.slides.length - 1));
+                this.indicators.appendChild(indicator);
+            }
+
+            createPlaceholderSlides() {
+                const placeholders = [
+                    { title: 'Bulk Messaging', desc: 'Send thousands of messages instantly' },
+                    { title: 'Contact Management', desc: 'Import and organize your contacts' },
+                    { title: 'Message Templates', desc: 'Create and save message templates' },
+                    { title: 'Analytics Dashboard', desc: 'Track your campaign performance' },
+                    { title: 'Auto-Reply Bot', desc: 'Automated customer responses' }
+                ];
+
+                placeholders.forEach((placeholder, index) => {
+                    const slide = document.createElement('div');
+                    slide.className = 'carousel-slide';
+                    slide.innerHTML = `
+                        <div style="height: 500px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem; color: var(--primary-color);">📱</div>
+                            <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--dark-color);">${placeholder.title}</h3>
+                            <p style="font-size: 1.2rem; color: var(--text-light); max-width: 400px;">${placeholder.desc}</p>
+                        </div>
+                    `;
+                    
+                    this.track.appendChild(slide);
+                    this.slides.push(slide);
+
+                    // Create indicator
+                    const indicator = document.createElement('div');
+                    indicator.className = 'indicator';
+                    indicator.addEventListener('click', () => this.goToSlide(index));
+                    this.indicators.appendChild(indicator);
+                });
+            }
+
+            setupEventListeners() {
+                this.prevBtn.addEventListener('click', () => this.prevSlide());
+                this.nextBtn.addEventListener('click', () => this.nextSlide());
+
+                // Touch/swipe support
+                let startX = 0;
+                let currentX = 0;
+                let isDragging = false;
+
+                this.track.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                    isDragging = true;
+                    this.stopAutoplay();
+                });
+
+                this.track.addEventListener('touchmove', (e) => {
+                    if (!isDragging) return;
+                    currentX = e.touches[0].clientX;
+                });
+
+                this.track.addEventListener('touchend', () => {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    
+                    const diffX = startX - currentX;
+                    if (Math.abs(diffX) > 50) {
+                        if (diffX > 0) {
+                            this.nextSlide();
+                        } else {
+                            this.prevSlide();
+                        }
+                    }
+                    
+                    this.startAutoplay();
+                });
+
+                // Pause autoplay on hover
+                this.track.addEventListener('mouseenter', () => this.stopAutoplay());
+                this.track.addEventListener('mouseleave', () => this.startAutoplay());
+            }
+
+            updateCarousel() {
+                if (this.slides.length === 0) return;
+                
+                const translateX = -this.currentSlide * 100;
+                this.track.style.transform = `translateX(${translateX}%)`;
+
+                // Update indicators
+                const indicators = this.indicators.querySelectorAll('.indicator');
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === this.currentSlide);
+                });
+            }
+
+            nextSlide() {
+                this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+                this.updateCarousel();
+            }
+
+            prevSlide() {
+                this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+                this.updateCarousel();
+            }
+
+            goToSlide(index) {
+                this.currentSlide = index;
+                this.updateCarousel();
+                this.stopAutoplay();
+                this.startAutoplay();
+            }
+
+            startAutoplay() {
+                this.stopAutoplay();
+                this.autoplayInterval = setInterval(() => this.nextSlide(), 4000);
+            }
+
+            stopAutoplay() {
+                if (this.autoplayInterval) {
+                    clearInterval(this.autoplayInterval);
+                    this.autoplayInterval = null;
+                }
+            }
+        }
+
+        // Initialize carousel when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new ProductCarousel();
+        });
+
+        // ===== MENU MOBILE =====
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+
+            // Função para abrir/fechar o menu
+            function toggleMobileMenu() {
+                mobileMenuToggle.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.classList.toggle('mobile-menu-open');
+            }
+
+            // Clique no botão hamburguer
+            if (mobileMenuToggle) {
+                mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+            }
+
+            // Fechar menu ao clicar em um link
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileMenu.classList.contains('active')) {
+                        toggleMobileMenu();
+                    }
+                });
+            });
+
+            // Fechar menu ao clicar fora dele
+            document.addEventListener('click', (e) => {
+                if (mobileMenu.classList.contains('active')) {
+                    if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                        toggleMobileMenu();
+                    }
+                }
+            });
+
+            // Fechar menu ao pressionar ESC
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+                    toggleMobileMenu();
+                }
+            });
+        });
+    </script>
+
+
+<script>
+// Track WhatsApp clicks as leads
+document.addEventListener('DOMContentLoaded', function() {
+    // Track all WhatsApp buttons/links
+    const whatsappLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"], .whatsapp-float, .whatsapp-button');
+    
+    whatsappLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Track as Lead event
+            fbq('track', 'Lead', {
+                content_name: 'WhatsApp Contact',
+                content_category: 'Contact',
+                source: 'whatsapp_button'
+            });
+            
+            console.log('Facebook Pixel: Lead event tracked for WhatsApp click');
+        });
+    });
+});
+</script>
+<script>
+// ===== SISTEMA DE RASTREAMENTO UTM COM LOCALSTORAGE =====
+(function() {
+    const STORAGE_KEY = 'utm_params';
+
+    // Função para salvar no localStorage
+    function saveToStorage(data) {
+        try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+        } catch (e) {
+            console.log('[UTM] Erro ao salvar no localStorage:', e);
+        }
+    }
+
+    // Função para ler do localStorage
+    function getFromStorage() {
+        try {
+            const stored = localStorage.getItem(STORAGE_KEY);
+            return stored ? JSON.parse(stored) : {};
+        } catch (e) {
+            console.log('[UTM] Erro ao ler do localStorage:', e);
+            return {};
+        }
+    }
+
+    // Função para obter parâmetros da URL
+    function getURLParameters() {
+        const params = new URLSearchParams(window.location.search);
+        const utmParams = {};
+        const trackingParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_id', 'fbclid', 'gclid', 'ref', 'source'];
+
+        trackingParams.forEach(param => {
+            if (params.has(param)) {
+                utmParams[param] = params.get(param);
+            }
+        });
+        return utmParams;
+    }
+
+    // Função para salvar UTMs no localStorage
+    function storeUTMs(utmParams) {
+        if (Object.keys(utmParams).length > 0) {
+            // Merge com dados existentes (novos valores sobrescrevem)
+            const existing = getFromStorage();
+            const merged = { ...existing, ...utmParams };
+            saveToStorage(merged);
+        }
+    }
+
+    // Função para recuperar UTMs do localStorage
+    function getStoredUTMs() {
+        return getFromStorage();
+    }
+
+    // Obtém UTMs (da URL ou localStorage)
+    function getUTMParams() {
+        let utmParams = getURLParameters();
+
+        if (Object.keys(utmParams).length > 0) {
+            // Novos UTMs na URL - salva no localStorage
+            storeUTMs(utmParams);
+            console.log('[UTM] Salvos no localStorage:', utmParams);
+            // Retorna merged para incluir UTMs anteriores também
+            utmParams = getStoredUTMs();
+        } else {
+            // Tenta recuperar do localStorage
+            utmParams = getStoredUTMs();
+            if (Object.keys(utmParams).length > 0) {
+                console.log('[UTM] Recuperados do localStorage:', utmParams);
+            }
+        }
+
+        return utmParams;
+    }
+
+    // Atualiza um link com UTMs
+    function addUTMsToLink(link, utmParams) {
+        if (!link || !link.href || Object.keys(utmParams).length === 0) return;
+
+        // Verifica se já tem os UTMs para evitar duplicação
+        if (link.href.includes('utm_source=')) return;
+
+        try {
+            const url = new URL(link.href);
+            for (const [key, value] of Object.entries(utmParams)) {
+                url.searchParams.set(key, value);
+            }
+            link.href = url.toString();
+            console.log('[UTM] Link atualizado:', link.href);
+        } catch (e) {
+            // Fallback
+            const separator = link.href.includes('?') ? '&' : '?';
+            const queryParts = Object.entries(utmParams).map(([k, v]) =>
+                encodeURIComponent(k) + '=' + encodeURIComponent(v)
+            );
+            link.href = link.href + separator + queryParts.join('&');
+        }
+    }
+
+    // Processa todos os links de checkout
+    function processCheckoutLinks() {
+        const utmParams = getUTMParams();
+        if (Object.keys(utmParams).length === 0) {
+            console.log('[UTM] Nenhum parâmetro UTM encontrado');
+            return;
+        }
+
+        // Seleciona TODOS os links que contêm oficialapps.com
+        const links = document.querySelectorAll('a.cta-button[href*="?product="]');
+        console.log('[UTM] Encontrados ' + links.length + ' links de checkout');
+
+        links.forEach(link => {
+            addUTMsToLink(link, utmParams);
+        });
+    }
+
+    // Executa imediatamente e também quando DOM estiver pronto
+    processCheckoutLinks();
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', processCheckoutLinks);
+    }
+
+    // Executa novamente após carregamento completo
+    window.addEventListener('load', processCheckoutLinks);
+
+    // Observer para elementos dinâmicos
+    const observer = new MutationObserver(function() {
+        processCheckoutLinks();
+    });
+
+    if (document.body) {
+        observer.observe(document.body, { childList: true, subtree: true });
+    } else {
+        document.addEventListener('DOMContentLoaded', function() {
+            observer.observe(document.body, { childList: true, subtree: true });
+        });
+    }
+
+})();
+</script>
+
+<!-- OPCIONAL: Script adicional para rastrear cliques com Facebook Pixel -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Rastreia cliques nos botões de checkout com parâmetros UTM
+    document.addEventListener('click', function(e) {
+        const checkoutLink = e.target.closest('a.cta-button[href*="?product="]');
+
+        if (checkoutLink) {
+            // Extrai parâmetros UTM do link
+            const url = new URL(checkoutLink.href);
+            const utmSource = url.searchParams.get('utm_source') || 'direct';
+            const utmMedium = url.searchParams.get('utm_medium') || 'none';
+            const utmCampaign = url.searchParams.get('utm_campaign') || 'none';
+
+            // Envia evento para o Facebook Pixel com informações UTM
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'InitiateCheckout', {
+                    content_name: e.target.textContent.trim(),
+                    content_category: 'Pricing',
+                    utm_source: utmSource,
+                    utm_medium: utmMedium,
+                    utm_campaign: utmCampaign
+                });
+            }
+        }
+    });
+});
+</script>
+
+<!-- Video Modals -->
+<div id="licensePanelVideo" class="video-modal">
+    <div class="video-modal-content">
+        <button class="video-modal-close" onclick="closeVideoModal(&#39;licensePanelVideo&#39;)">×</button>
+        <div class="video-wrapper">
+            <iframe src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/saved_resource.html" data-src="https://www.youtube.com/embed/VNdimIoZJQk?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="customColorVideo" class="video-modal">
+    <div class="video-modal-content">
+        <button class="video-modal-close" onclick="closeVideoModal(&#39;customColorVideo&#39;)">×</button>
+        <div class="video-wrapper">
+            <iframe src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/saved_resource(1).html" data-src="https://www.youtube.com/embed/OI6yeI4kH7Y?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+// Funções para abrir e fechar os modais de vídeo
+function openVideoModal(modalId) {
+    const modal = document.getElementById(modalId);
+    const iframe = modal.querySelector('iframe');
+    const videoSrc = iframe.getAttribute('data-src');
+
+    // Define o src do iframe para carregar o vídeo
+    iframe.setAttribute('src', videoSrc);
+
+    // Mostra o modal
+    modal.classList.add('active');
+
+    // Previne scroll do body
+    document.body.style.overflow = 'hidden';
+}
+
+function closeVideoModal(modalId) {
+    const modal = document.getElementById(modalId);
+    const iframe = modal.querySelector('iframe');
+
+    // Remove o src do iframe para parar o vídeo
+    iframe.setAttribute('src', '');
+
+    // Esconde o modal
+    modal.classList.remove('active');
+
+    // Restaura scroll do body
+    document.body.style.overflow = 'auto';
+}
+
+// Fecha o modal ao clicar fora do conteúdo
+document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('video-modal')) {
+        const modalId = e.target.id;
+        closeVideoModal(modalId);
+    }
+});
+
+// Fecha o modal ao pressionar ESC
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const activeModal = document.querySelector('.video-modal.active');
+        if (activeModal) {
+            closeVideoModal(activeModal.id);
+        }
+    }
+});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17603392215');
+</script>
+<script defer="" src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;7b3c8a0adcc547149b5cb7d4668ff8a0&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+
+<script defer="" src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/Czt0NOaMGSXUfRpb"></script>
+<iframe height="0" width="0" style="display: none; visibility: hidden;" src="./WA Sender 4.11.8 - #1 WhatsApp Bulk Message Automation Software_files/saved_resource(2).html"></iframe><!-- END Pixel Code --></body></html>
